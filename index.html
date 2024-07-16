@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyAngularApp</title>
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.ico" >
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="form-floating mb-3">
+                <input class="form-control" type="text" id="searchInput" placeholder="Search by customer name or amount">
+                <label for="searchInput">Search by customer name or amount</label>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Total Transaction Amount</th>
+                        <th>Transactions per day</th>
+                    </tr>
+                </thead>
+                <tbody id="transactionTable">
+                    <!-- Transactions will be populated here -->
+                </tbody>
+            </table>
+            <div id="noDataMessage" style="display:none">
+                <img src="imgs/no-data.PNG" alt="no data">
+                <h3>No results found</h3>
+            </div>
+            
+            <div id="chartContainer">
+                <canvas id="transactionChart"></canvas>
+            </div>
+        </div>
+    </section>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

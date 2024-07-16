@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+input.form-control  {
+    border-radius: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: rgb(65, 84, 122);
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+button {
+    padding: 5px 10px;
+    margin: 0;
+    cursor: pointer;
+}
+
+#chartContainer {
+    width: 80%;
+    margin: 20px auto;
+    display: none;
+}
+
+#transactionTable .btn {
+    background-color: #3252dfda;
+    color: #fff;
+    border: 1px solid rgba(50, 82, 223, .8549019608);
+}
+
+#transactionTable .btn:hover {
+    background-color: transparent;
+    border: 1px solid rgba(50, 82, 223, .8549019608);
+    color: #000;
+}
+#noDataMessage{
+    width: 40%;
+    margin: 40px auto;
+}
+#noDataMessage h3 {
+    text-align: center;
+}
